@@ -1,0 +1,46 @@
+body {
+  background: rgb(24, 27, 27);
+}
+
+.exercise {
+  color: rgb(218, 265, 32);
+  text-align: center;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+}
+
+.image {
+  width: 200px;
+  height: 300px;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 7px #c76750;
+  background: #ccc;
+}
+
+.image:hover {
+  outline: 4px solid #e0c477;
+}
+
+.three-image-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .three-image-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .image {
+    width: 30vw;
+    height: 25vh;
+  }
+
+  .exercise {
+    font-size: 1.2em;
+    padding: 0 10px;
+  }
+}
